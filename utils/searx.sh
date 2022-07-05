@@ -928,7 +928,7 @@ EOF
 
     case $DIST_ID-$DIST_VERS in
         ubuntu-*|debian-*)
-            systemctl --no-pager -l status "${SERVICE_NAME}"
+            systemctl --no-pager -l status uwsgi
             ;;
         arch-*)
             systemctl --no-pager -l status "uwsgi@${SERVICE_NAME%.*}"
